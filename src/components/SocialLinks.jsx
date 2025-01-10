@@ -8,7 +8,7 @@ const SocialLinks = () => {
           href="https://github.com/snibix"
           target="_blank"
         >
-          <i className="bi bi-github"></i>
+          <i className="bi bi-github fs-4"></i>
         </a>
       </li>
       <li className="ms-3">
@@ -17,7 +17,7 @@ const SocialLinks = () => {
           href="https://www.linkedin.com/in/damien-jaworski-49b813246/"
           target="_blank"
         >
-          <i className="bi bi-linkedin"></i>
+          <i className="bi bi-linkedin fs-4"></i>
         </a>
       </li>
     </ul>

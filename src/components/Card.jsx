@@ -6,7 +6,7 @@ function Card({ id, title, img, description }) {
     <div
       className="card mx-2"
       style={{
-        width: "290px",
+        width: "270px",
         height: "380px",
         flexShrink: 0,
       }}
