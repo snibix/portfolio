@@ -12,7 +12,7 @@ function Navbar() {
   };
 
   return (
-    <ul className="nav nav-pills">
+    <ul className="nav nav-pills nav-fill">
       <li className="nav-item">
         <Link to="/" className="nav-link active" aria-current="page">
           Accueil
