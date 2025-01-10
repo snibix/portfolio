@@ -39,7 +39,7 @@ function Accueil() {
 
       <section className="bg-light py-5">
         <div className="container">
-          <h2 className="display-4 text-center py-2 fw-medium ">
+          <h2 className="display-4 text-center py-2 fw-medium " id="exp">
             Formations & Expériences
           </h2>
           <div className="row d-flex justify-content-between gap-5">
