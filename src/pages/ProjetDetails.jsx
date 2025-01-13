@@ -1,8 +1,9 @@
-import "bootstrap/dist/css/bootstrap.min.css"; // Assure-toi d'importer le CSS de bootstrap
+import "bootstrap-icons/font/bootstrap-icons.css";
+import "bootstrap/dist/css/bootstrap.min.css";
 import { useEffect, useState } from "react";
-import { Carousel } from "react-bootstrap"; // Import du carousel de react-bootstrap
-import { useParams } from "react-router-dom";
-import projetData from "../data/projetsData"; // Assure-toi que ce chemin est correct
+import { Carousel } from "react-bootstrap";
+import { Link, useParams } from "react-router-dom";
+import projetData from "../data/projetsData";
 
 function ProjetDetails() {
   const { id } = useParams(); // Utilise useParams pour récupérer l'ID depuis l'URL
@@ -22,7 +23,14 @@ function ProjetDetails() {
 
   return (
     <div className="container">
-      <h1 className="text-center fs-1 fw-bold py-5">{project.title}</h1>
+      <div className="py-5 d-flex justify-content-evenly align-items-center">
+        <Link to="/">
+          <i className="bi bi-arrow-left fs-1"></i>
+        </Link>
+        <div className="w-100">
+          <h1 className=" fs-1 fw-bold text-center">{project.title}</h1>
+        </div>
+      </div>
       <Carousel className="projet-carousel">
         {project.images.map((image, index) => (
           <Carousel.Item key={index} className="">
