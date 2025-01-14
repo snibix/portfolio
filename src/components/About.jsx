@@ -9,30 +9,15 @@ function About() {
       </h1>
       <div className="col-lg-6 mx-auto" data-aos="fade-up">
         <p className="lead fs-4 pb-lg-5 text-start">
-          <span>
-            Bonjour, je suis Damien Jaworski, Développeur web. Mon parcours en
-            développement web a débuté en 2022, lorsque j&#39;ai décidé de me
-            réorienter professionnellement.
-            <br />
-            <br />
-          </span>
-          J&#39;ai suivi une formation de 11 mois où j&#39;ai appris les
-          fondamentaux du développement web, notamment le HTML, le CSS,
-          JavaScript, PHP, MySQL, ainsi que la gestion des bases de données et
-          l&#39;utilisation de Bootstrap pour la création de sites réactifs et
-          modernes.
-          <br />
-          <br /> Souhaitant approfondir mes compétences et me spécialiser
-          davantage, j&#39;ai poursuivi ma formation en développement
-          d&#39;applications, où je me suis concentré sur le développement
-          front-end. C&#39;est là que j&#39;ai découvert et React, un outil
-          puissant qui me permet de créer des interfaces dynamiques et
-          interactives. Aujourd&#39;hui, je suis constamment à la recherche de
-          nouvelles opportunités pour mettre mes compétences en pratique, créer
-          des projets innovants et collaborer avec des équipes motivées. Mon
-          objectif est de concevoir des applications web fonctionnelles,
-          esthétiques et performantes, tout en continuant à progresser dans ce
-          domaine en constante évolution.
+          Je suis Damien Jaworski, Développeur web passionné par la création
+          d&#39;applications modernes et réactives. Mon parcours en
+          développement web a commencé en 2022, après une reconversion
+          professionnelle. J&#39;ai d&#39;abord acquis des compétences en HTML,
+          CSS, JavaScript, PHP, MySQL, et Bootstrap, avant de me spécialiser
+          dans le développement front-end avec React. Aujourd&#39;hui, je
+          cherche à créer des projets innovants et collaborer avec des équipes
+          dynamiques pour concevoir des applications web fonctionnelles,
+          esthétiques et performantes.
         </p>
       </div>
     </div>

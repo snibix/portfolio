@@ -5,7 +5,6 @@ import Experiences from "../components/Experiences";
 import Training from "../components/Training";
 import projects from "../data/projetsData";
 
-//TODO : a voir pour les animations a terminer
 function Accueil() {
   return (
     <main>
@@ -19,7 +18,7 @@ function Accueil() {
             Mes Projets
           </h2>
           <div
-            className="d-flex overflow-auto pb-5 cards-container gap-lg-5 mb-3"
+            className="d-flex overflow-auto pb-5 cards-container gap-lg-4 mb-3"
             data-aos="fade-up"
             style={{
               overflowX: "auto",
@@ -135,7 +134,12 @@ function Accueil() {
         </div>
       </section>
 
-      <section id="contact" className="py-lg-5 py-sm-3" data-aos="fade-up">
+      <section
+        id="contact"
+        className="py-lg-5 py-sm-3"
+        data-aos="fade-up"
+        data-aos-offset="100"
+      >
         <div className="container py-5">
           <h2 className="text-center">Contactez-moi</h2>
           <p className="text-center mb-4">
