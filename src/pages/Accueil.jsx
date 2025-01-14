@@ -13,7 +13,7 @@ function Accueil() {
         <About />
       </section>
 
-      <section id="projet" className="py-lg-5 py-3" data-aos="fade-up">
+      <section id="projet" className="py-lg-5 py-3" data-aos="fade-down">
         <div className="container w-75 m-auto">
           <h2 className="display-4 fw-medium text-body-emphasis text-center pb-5">
             Mes Projets
@@ -44,17 +44,17 @@ function Accueil() {
           <h2
             className="display-4 text-center py-lg-2 py-3 fw-medium "
             id="exp"
-            data-aos="fade-left"
+            data-aos="fade-down"
           >
             Formations & Expériences
           </h2>
           <div className="row d-flex justify-content-between gap-lg-4 gap-3">
-            <h3 className="fs-2" data-aos="fade-right">
+            <h3 className="fs-2" data-aos="fade-up">
               Formations
             </h3>
             <div
-              className="col-md-6 w-100 d-flex flex-column"
-              data-aos="fade-left"
+              className="col-lg-6 col-10 w-100 d-flex flex-column"
+              data-aos="fade-up"
             >
               <Training
                 title="Développeur Concepteur Logiciel - OpenClassRooms"
@@ -81,8 +81,8 @@ function Accueil() {
               </Training>
             </div>
             <div
-              className="col-md-6 training-item w-100 pb-4"
-              data-aos="fade-left"
+              className="col-lg-6 col-10 training-item w-100 pb-4"
+              data-aos="fade-up"
             >
               <Training
                 title="Développeur Web - CCI CAMPUS"
@@ -99,13 +99,13 @@ function Accueil() {
               </Training>
             </div>
           </div>
-          <div className="col-md-6 training-item w-100">
-            <h3 className="py-lg-3 fs-2 mb-4" data-aos="fade-right">
+          <div className="col-lg-6 col-10 training-item w-100">
+            <h3 className="py-lg-3 fs-2 mb-4" data-aos="fade-up">
               Expériences
             </h3>
             <div
-              className="col-md-6 training-item w-100 pb-4"
-              data-aos="fade-left"
+              className="col-lg-6 col-10 training-item w-100 pb-4"
+              data-aos="fade-up"
             >
               <Experiences
                 title="Stage de formation - KR-Barber"
@@ -135,7 +135,7 @@ function Accueil() {
         </div>
       </section>
 
-      <section id="contact" className="py-lg-5 py-sm-3" data-aos="fade-right">
+      <section id="contact" className="py-lg-5 py-sm-3" data-aos="fade-up">
         <div className="container py-5">
           <h2 className="text-center">Contactez-moi</h2>
           <p className="text-center mb-4">
@@ -143,7 +143,7 @@ function Accueil() {
             de projet !
           </p>
           <div className="row justify-content-center">
-            <div className="col-lg-6">
+            <div className="col-lg-6 col-10">
               <Contact />
             </div>
           </div>

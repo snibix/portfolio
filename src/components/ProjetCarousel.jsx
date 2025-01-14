@@ -19,6 +19,7 @@ function ProjectCarousel({ images }) {
               src={image}
               className="d-block w-100"
               alt={`Project Image ${index + 1}`}
+              data-aos="fade-up"
             />
           </div>
         ))}

@@ -23,7 +23,10 @@ function ProjetDetails() {
 
   return (
     <div className="container">
-      <div className="py-5 d-flex justify-content-evenly align-items-center">
+      <div
+        className="py-5 d-flex justify-content-evenly align-items-center"
+        data-aos="fade-down"
+      >
         <Link to="/">
           <i className="bi bi-arrow-left fs-1"></i>
         </Link>
@@ -42,8 +45,13 @@ function ProjetDetails() {
           </Carousel.Item>
         ))}
       </Carousel>
-      <h2 className="ms-4 mt-5">Description</h2>
-      <p className="m-4 fs-5">{project.longDescription}</p>
+
+      <h2 className="ms-4 mt-5" data-aos="fade-down" data-aos-offset="50">
+        Description
+      </h2>
+      <p className="m-4 fs-5" data-aos="fade-up" data-aos-offset="50">
+        {project.longDescription}
+      </p>
     </div>
   );
 }

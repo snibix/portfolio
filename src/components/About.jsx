@@ -3,11 +3,11 @@ function About() {
     <div className="px-4 pt-lg-4 pt-sm-2 my-3 text-center border-bottom">
       <h1
         className="display-4 fw-medium text-body-emphasis py-3"
-        data-aos="fade-left"
+        data-aos="fade-down"
       >
         Bienvenue sur mon portfolio !
       </h1>
-      <div className="col-lg-6 mx-auto" data-aos="fade-right">
+      <div className="col-lg-6 mx-auto" data-aos="fade-up">
         <p className="lead fs-4 pb-lg-5 text-start">
           <span>
             Bonjour, je suis Damien Jaworski, Développeur web. Mon parcours en
