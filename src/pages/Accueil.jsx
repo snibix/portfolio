@@ -5,6 +5,7 @@ import Experiences from "../components/Experiences";
 import Training from "../components/Training";
 import projects from "../data/projetsData";
 
+//TODO : a voir pour les animations a terminer
 function Accueil() {
   return (
     <main>
@@ -12,13 +13,14 @@ function Accueil() {
         <About />
       </section>
 
-      <section id="projet" className="py-3">
+      <section id="projet" className="py-lg-5 py-3" data-aos="fade-up">
         <div className="container w-75 m-auto">
           <h2 className="display-4 fw-medium text-body-emphasis text-center pb-5">
             Mes Projets
           </h2>
           <div
             className="d-flex overflow-auto pb-5 cards-container gap-lg-5 mb-3"
+            data-aos="fade-up"
             style={{
               overflowX: "auto",
               whiteSpace: "nowrap",
@@ -37,14 +39,23 @@ function Accueil() {
         </div>
       </section>
 
-      <section className="bg-light py-5">
+      <section className="bg-light py-lg-5">
         <div className="container">
-          <h2 className="display-4 text-center py-2 fw-medium " id="exp">
+          <h2
+            className="display-4 text-center py-lg-2 py-3 fw-medium "
+            id="exp"
+            data-aos="fade-left"
+          >
             Formations & Expériences
           </h2>
-          <div className="row d-flex justify-content-between gap-5">
-            <h3 className="py-2 fs-2">Formations</h3>
-            <div className="col-md-6 w-100 d-flex flex-column">
+          <div className="row d-flex justify-content-between gap-lg-4 gap-3">
+            <h3 className="fs-2" data-aos="fade-right">
+              Formations
+            </h3>
+            <div
+              className="col-md-6 w-100 d-flex flex-column"
+              data-aos="fade-left"
+            >
               <Training
                 title="Développeur Concepteur Logiciel - OpenClassRooms"
                 time="10/2023 - 12/2024"
@@ -69,7 +80,10 @@ function Accueil() {
                 dynamiques.
               </Training>
             </div>
-            <div className="col-md-6 training-item w-100 pb-4">
+            <div
+              className="col-md-6 training-item w-100 pb-4"
+              data-aos="fade-left"
+            >
               <Training
                 title="Développeur Web - CCI CAMPUS"
                 time="05/2022 - 04/2023"
@@ -86,8 +100,13 @@ function Accueil() {
             </div>
           </div>
           <div className="col-md-6 training-item w-100">
-            <h3 className="py-3 fs-2">Expériences</h3>
-            <div className="col-md-6 training-item w-100 pb-4">
+            <h3 className="py-lg-3 fs-2 mb-4" data-aos="fade-right">
+              Expériences
+            </h3>
+            <div
+              className="col-md-6 training-item w-100 pb-4"
+              data-aos="fade-left"
+            >
               <Experiences
                 title="Stage de formation - KR-Barber"
                 time="01/2023 - 02/2023"
@@ -116,7 +135,7 @@ function Accueil() {
         </div>
       </section>
 
-      <section id="contact" className="py-5">
+      <section id="contact" className="py-lg-5 py-sm-3" data-aos="fade-right">
         <div className="container py-5">
           <h2 className="text-center">Contactez-moi</h2>
           <p className="text-center mb-4">

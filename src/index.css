@@ -29,3 +29,13 @@
   border-radius: 5px;
   padding: 50px 20px;
 }
+
+p {
+  font-family: poppins, sans-serif;
+}
+h1 {
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+h2 {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
