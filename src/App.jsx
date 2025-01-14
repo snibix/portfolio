@@ -1,5 +1,6 @@
 import "aos/dist/aos.css";
 import "bootstrap/dist/css/bootstrap.min.css";
+import "bootstrap/dist/js/bootstrap.bundle.min.js";
 import { Route, HashRouter as Router, Routes } from "react-router-dom";
 import "./App.css";
 
