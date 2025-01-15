@@ -12,13 +12,13 @@ function Accueil() {
         <About />
       </section>
 
-      <section id="projet" className="py-lg-5 py-3" data-aos="fade-down">
+      <section id="projet" className="py-lg-5 py-3" data-aos="fade-up">
         <div className="container w-75 m-auto">
           <h2 className="display-4 fw-medium text-body-emphasis text-center pb-5">
             Mes Projets
           </h2>
           <div
-            className="d-flex overflow-auto pb-5 cards-container gap-lg-4 mb-3"
+            className="d-flex overflow-auto pb-5 cards-container gap-lg-4 mb-3 gap-2"
             data-aos="fade-up"
             style={{
               overflowX: "auto",
@@ -43,7 +43,7 @@ function Accueil() {
           <h2
             className="display-5 text-center py-lg-0 py-4 fw-medium"
             id="formation"
-            data-aos="fade-down"
+            data-aos="fade-up"
           >
             Formations
           </h2>
@@ -116,7 +116,7 @@ function Accueil() {
           <h2
             className="display-5 text-center py-lg-0 py-3 fw-medium"
             id="exp"
-            data-aos="fade-down"
+            data-aos="fade-up"
           >
             Expériences
           </h2>

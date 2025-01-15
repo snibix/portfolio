@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 function Card({ id, title, img, description }) {
   return (
     <div
-      className="card mx-2 rounded-2"
+      className="card rounded-2"
       style={{
         width: "240px",
         height: "360px",
