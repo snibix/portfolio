@@ -45,13 +45,55 @@ function ProjetDetails() {
           </Carousel.Item>
         ))}
       </Carousel>
+      <div>
+        <div>
+          <h2 className="ms-4 mt-5" data-aos="fade-down" data-aos-offset="50">
+            Description
+          </h2>
+          <p className="m-4 fs-5" data-aos="fade-up" data-aos-offset="50">
+            {project.longDescription}
+          </p>
+        </div>
+        <div>
+          <h2 className="ms-4 mt-5" data-aos="fade-down" data-aos-offset="50">
+            Objectif
+          </h2>
+          <p className="m-4 fs-5" data-aos="fade-up" data-aos-offset="50">
+            {project.objectif}
+          </p>
+        </div>
+        <div>
+          <h2 className="ms-4 mt-5" data-aos="fade-down" data-aos-offset="50">
+            Technologies
+          </h2>
 
-      <h2 className="ms-4 mt-5" data-aos="fade-down" data-aos-offset="50">
-        Description
-      </h2>
-      <p className="m-4 fs-5" data-aos="fade-up" data-aos-offset="50">
-        {project.longDescription}
-      </p>
+          <div className="d-flex flex-wrap justify-content-start">
+            {project.technologies.map((logo, index) => (
+              <div key={index} className="col-4 col-sm-3 col-md-2 p-2">
+                <div className="d-flex justify-content-center align-items-center py-3">
+                  <img
+                    src={logo}
+                    alt={`logo-${index}`}
+                    className="img-fluid logo-perso"
+                    data-aos="fade-down"
+                    data-aos-offset="50"
+                  />
+                </div>
+              </div>
+            ))}
+          </div>
+          <div className="text-center py-3" data-aos="fade-down">
+            <a
+              href={project.git}
+              target="_blank"
+              className="btn btn-primary mt-3"
+              rel="noopener noreferrer"
+            >
+              Consulte le repository GitHub pour en savoir plus
+            </a>
+          </div>
+        </div>
+      </div>
     </div>
   );
 }
