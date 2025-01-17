@@ -68,5 +68,19 @@ const projetData = [
       "./img/homyfood-desktop04.png",
     ],
   },
+  {
+    id: 7,
+    title: "Fisheye",
+    img: "./img/fisheye01.png",
+    description:
+      "Fisheye est un projet de refonte d'un site de photographie, réalisé à l'origine en HTML, CSS et JavaScript lors de ma formation OpenClassrooms. J'ai choisi de le réécrire entièrement en React pour approfondir mes compétences avec cette bibliothèque et son écosystème. Ce projet propose une interface intuitive où les utilisateurs peuvent découvrir les réalisations de photographes à travers des cartes interactives, explorer leurs portfolios et interagir avec les photos en temps réel grâce à des fonctionnalités comme les likes et la Lightbox.",
+    longDescription:
+      "Fisheye est un projet que j'ai réalisé dans le cadre de ma formation en développement web. Initialement créé en HTML, CSS et JavaScript, j'ai choisi de le réécrire en React pour renforcer mes compétences avec cette bibliothèque moderne. L'objectif était de transformer un site statique en une application dynamique et interactive, en utilisant des technologies modernes pour enrichir l'expérience utilisateur.Le principal objectif de Fisheye était de créer un site dédié aux photographes, qui permette aux utilisateurs de découvrir les réalisations de ces professionnels tout en offrant une expérience fluide et interactive. J'ai intégré plusieurs fonctionnalités, telles que la possibilité de trier les photographes par popularité, date ou titre, ainsi que des interactions en temps réel avec les images grâce à un système de likes et une Lightbox pour voir les images en grand.",
+    images: [
+      "./img/fisheye01.png",
+      "./img/fisheye02.png",
+      "./img/fisheye03.png",
+    ],
+  },
 ];
 export default projetData;

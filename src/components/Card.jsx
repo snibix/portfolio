@@ -7,12 +7,21 @@ function Card({ id, title, img, description }) {
       className="card rounded-2"
       style={{
         width: "240px",
-        height: "360px",
+        height: "350px",
         flexShrink: 0,
       }}
     >
-      <img src={img} className="card-img-top" alt={title} />
-      <div className="card-body">
+      <img
+        src={img}
+        className="card-img-top"
+        alt={title}
+        style={{
+          height: "150px",
+          width: "100%",
+        }}
+      />
+      <hr className="p-0 m-0" />
+      <div className="card-body h-25">
         <h5 className="card-title">{title}</h5>
         <p className="card-text card-content-perso">{description}</p>
         <div className="d-flex justify-content-center py-2">
