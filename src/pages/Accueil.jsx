@@ -6,6 +6,9 @@ import Training from "../components/Training";
 import projects from "../data/projetsData";
 
 function Accueil() {
+  const sortedProjects = projects.sort(
+    (a, b) => new Date(b.date) - new Date(a.date)
+  );
   return (
     <main>
       <section id="about" className="bg-light">
@@ -25,7 +28,7 @@ function Accueil() {
               whiteSpace: "nowrap",
             }}
           >
-            {projects.map((project) => (
+            {sortedProjects.map((project) => (
               <Card
                 key={project.id}
                 id={project.id}
