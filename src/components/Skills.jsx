@@ -14,7 +14,7 @@ import {
 
 function Skills() {
   return (
-    <div className="container pt-5">
+    <div className="container py-4">
       <div className="row g-3 justify-content-center">
         <div className="col-4 col-md-2 text-center">
           <SiHtml5

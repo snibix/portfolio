@@ -6,7 +6,7 @@ function About() {
         <div className="col-12 col-lg-6" data-aos="fade-right">
           <h3 className="fs-1">Jaworski Damien</h3>
           <h4 className="fs-2 pb-3">Développeur web</h4>
-          <p className="lead fs-4 pb-lg-5 text-start">
+          <p className="lead fs-4 text-start">
             Je suis un Développeur web passionné par la création
             d&#39;applications modernes et réactives. <br />
             <br />
@@ -14,8 +14,8 @@ function About() {
             reconversion professionnelle. J&#39;ai d&#39;abord acquis des
             compétences en HTML, CSS, JavaScript, PHP, MySQL, et Bootstrap,
             avant de me spécialiser dans le développement front-end avec React.
-            <Skills />
           </p>
+          <Skills />
         </div>
 
         <div
