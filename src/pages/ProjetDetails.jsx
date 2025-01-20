@@ -82,7 +82,11 @@ function ProjetDetails() {
               </div>
             ))}
           </div>
-          <div className="text-center py-3" data-aos="fade-down">
+          <div
+            className="text-center py-3"
+            data-aos="fade-down"
+            data-aos-offset="100"
+          >
             <a
               href={project.git}
               target="_blank"

@@ -2,6 +2,7 @@ import About from "../components/About";
 import Card from "../components/Card";
 import Contact from "../components/Contact";
 import Experiences from "../components/Experiences";
+
 import Training from "../components/Training";
 import projects from "../data/projetsData";
 
