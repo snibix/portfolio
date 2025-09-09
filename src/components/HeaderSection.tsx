@@ -1,8 +1,9 @@
 const links = [
-  { name: "Mes Compétences", href: "#" },
-  { name: "Mes Projets", href: "#" },
+  { name: "Mes Compétences", href: "#skills" },
   { name: "Mes Formations", href: "#" },
+  { name: "Mes Projets", href: "#" },
   { name: "Mes Expériences", href: "#" },
+  { name: "Contact", href: "#" },
 ];
 
 export default function HeaderSection() {
