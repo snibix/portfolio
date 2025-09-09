@@ -23,7 +23,10 @@ export default function Training() {
             </defs>
           </svg>
 
-          <h2 className="text-white text-5xl w-auto text-center pt-10 font-semibold">
+          <h2
+            className="text-white text-5xl w-auto text-center pt-10 font-semibold"
+            id="training"
+          >
             Mes Formations
           </h2>
           <div className="flex justify-evenly">

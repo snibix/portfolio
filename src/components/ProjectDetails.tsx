@@ -22,7 +22,10 @@ const ProjectDetail = () => {
 
   return (
     <div className="container mx-auto px-4 py-10">
-      <Link to="/" className="text-blue-500 hover:underline mb-4 inline-block">
+      <Link
+        to="/#project"
+        className="text-blue-500 hover:underline mb-4 inline-block"
+      >
         ← Retour aux projets
       </Link>
 

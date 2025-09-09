@@ -28,7 +28,7 @@ const Projects = () => {
     : sortedProjects.slice(0, 4);
 
   return (
-    <div className="container mx-auto px-4 py-10">
+    <div className="container mx-auto px-4 py-10" id="project">
       <h2 className="text-5xl font-semibold mb-8 text-center py-5 text-blue-950">
         Mes Projets
       </h2>
