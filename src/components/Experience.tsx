@@ -2,7 +2,7 @@ export default function Training() {
   return (
     <div className="bg-white" id="experience">
       <div className="mx-auto">
-        <div className="relative isolate overflow-hidden bg-gray-900 px-6 pt-16 shadow-2xl sm:px-16 md:pt-24 lg:flex-column lg:gap-x-20 lg:px-24 lg:pt-0">
+        <div className="relative isolate overflow-hidden bg-gray-900 h-150 pt-15 shadow-2xl sm:px-16 md:pt-24 lg:flex-column lg:gap-x-20 lg:px-24 lg:pt-0">
           <svg
             viewBox="0 0 1024 1024"
             aria-hidden="true"
