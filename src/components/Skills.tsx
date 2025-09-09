@@ -1,8 +1,8 @@
 export default function Skills() {
   return (
-    <div className="bg-white py-10" id="skills">
+    <div className="bg-white pb-20 pt-15" id="skills">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
-        <h2 className="text-center text-4xl font-semibold text-gray-900">
+        <h2 className="text-center text-5xl font-semibold text-gray-900">
           Mes Compétences
         </h2>
         <div className="mx-auto mt-15 grid max-w-lg grid-cols-4 items-center justify-center gap-x-8 gap-y-10 sm:max-w-xl sm:grid-cols-6 sm:gap-x-10 lg:mx-0 lg:max-w-none lg:grid-cols-5">
