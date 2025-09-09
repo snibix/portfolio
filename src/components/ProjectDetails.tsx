@@ -4,6 +4,7 @@ import { Link, useParams } from "react-router-dom";
 import projects from "../data/projetsData.json";
 
 const techIcons: { [key: string]: JSX.Element } = {
+  //Pas oublier de corriger l'erreur du JSX
   html: <DiHtml5 color="#e34f26" size={28} />,
   css: <DiCss3 color="#1572B6" size={28} />,
   js: <DiJavascript1 color="#f7df1e" size={28} />,

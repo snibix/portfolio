@@ -1,5 +1,6 @@
 import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
 import "./App.css";
+import Experience from "./components/Experience";
 import HeaderSection from "./components/HeaderSection";
 import ProjectDetail from "./components/ProjectDetails";
 import Projects from "./components/Projects";
@@ -18,6 +19,7 @@ function App() {
               <Skills />
               <Training />
               <Projects />
+              <Experience />
             </main>
           }
         />

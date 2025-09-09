@@ -163,7 +163,9 @@
       "html",
       "css",
       "js",
-      "react"
+      "react",
+      "bootstrap",
+      "konvajs"
     ],
     "git": "https://github.com/snibix"
   },
@@ -184,7 +186,8 @@
       "html",
       "css",
       "js",
-      "react"
+      "react",
+      "bootstrap"
     ],
     "git": "https://github.com/snibix"
   }

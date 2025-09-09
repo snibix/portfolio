@@ -40,7 +40,7 @@ export default function HeaderSection() {
       </div>
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="mx-auto max-w-2xl lg:mx-0">
-          <h2 className="text-5xl font-semibold tracking-tight text-white sm:text-7xl">
+          <h2 className="text-6xl font-semibold tracking-tight text-white sm:text-6xl">
             Jaworski Damien <br />
             Développeur Web
           </h2>
