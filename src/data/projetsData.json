@@ -7,9 +7,9 @@
     "description": "Ce projet consiste à migrer une application HRnet de jQuery à React. Ma mission était de moderniser l'interface utilisateur en intégrant un module de gestion de modals, que j'ai également converti de jQuery à React. Cela permet une meilleure gestion des fenêtres modales et une interface plus réactive et moderne.",
     "longDescription": "Ce projet consiste à migrer une application HRnet de jQuery à React. Ma mission était de moderniser l'interface utilisateur en intégrant un module de gestion de modals, que j'ai également converti de jQuery à React. Cela permet une meilleure gestion des fenêtres modales et une interface plus réactive et moderne, tout en améliorant les performances et la maintenabilité de l'application.",
     "images": [
-      "./img/hrnet01.png",
-      "./img/hrnet02.png",
-      "./img/hrnet03.png"
+      "/img/hrnet01.png",
+      "/img/hrnet02.png",
+      "/img/hrnet03.png"
     ],
     "objectif": "Migrer une application jQuery vers React pour moderniser son interface et la rendre plus réactive.",
     "technologies": [
@@ -28,9 +28,9 @@
     "description": "Développement du front-end d'une application bancaire avec React et Redux, en intégrant le front avec le back via des appels API.",
     "longDescription": "Développement du front-end d'une application bancaire avec React et Redux, en intégrant le front avec le back via des appels API. J'ai utilisé Swagger pour documenter et gérer les routes API, notamment celles liées aux transactions. L'application comprend une page d'accueil, une page de connexion permettant l'authentification des utilisateurs, et une page utilisateur où les utilisateurs connectés peuvent modifier leur prénom et leur nom avec une mise à jour en temps réel. Ce projet m'a permis de renforcer mes compétences en intégration API, en gestion d'état avec Redux et en documentation API avec Swagger.",
     "images": [
-      "./img/argentbank01.png",
-      "./img/argentbank02.png",
-      "./img/argentbank03.png"
+      "/img/argentbank01.png",
+      "/img/argentbank02.png",
+      "/img/argentbank03.png"
     ],
     "objectif": "Créer un front-end pour une application bancaire permettant une gestion des transactions et des comptes utilisateurs.",
     "technologies": [
@@ -49,7 +49,7 @@
     "description": "Développement d'un tableau de bord sportif avec React, intégrant des graphiques interactifs et dynamiques basés sur les données d'une API.",
     "longDescription": "Développement d'un tableau de bord sportif avec React, intégrant des graphiques interactifs et dynamiques basés sur les données d'une API. J'ai utilisé Recharts pour créer et personnaliser les graphiques, tels que des graphiques en barres, en lignes et en radar. Les appels HTTP pour récupérer les données de l'API ont été gérés avec Fetch. Ce projet m'a permis de consolider mes compétences en manipulation de données API, en intégration de bibliothèques de visualisation de données et en structuration de tableaux de bord dynamiques.",
     "images": [
-      "./img/sportsee.png"
+      "/img/sportsee.png"
     ],
     "objectif": "Créer un tableau de bord sportif dynamique avec des graphiques interactifs pour afficher des données d'un API.",
     "technologies": [
@@ -68,9 +68,9 @@
     "description": "Développement du front-end d'une application avec React et React Router, en respectant une maquette préétablie.",
     "longDescription": "Développement du front-end d'une application avec React et React Router, en respectant une maquette préétablie. J'ai utilisé SASS pour styliser l'application et ajouter des animations afin d'améliorer l'expérience utilisateur. Les données de l'application ont été récupérées depuis un fichier JSON pour afficher dynamiquement le contenu. Ce projet m'a permis de perfectionner mes compétences en routage avec React Router, en stylisation avancée avec SASS et en intégration de maquettes de manière fidèle.",
     "images": [
-      "./img/kasa01.png",
-      "./img/kasa02.png",
-      "./img/kasa03.png"
+      "/img/kasa01.png",
+      "/img/kasa02.png",
+      "/img/kasa03.png"
     ],
     "objectif": "Créer une application de réservation d'hébergements en utilisant React, React Router et SASS.",
     "technologies": [
@@ -90,8 +90,8 @@
     "description": "Reconstruction d'une interface front-end en React, fidèle à une maquette préétablie, avec une organisation modulaire en composants réutilisables.",
     "longDescription": "Recréation du site Booki, une plateforme de réservation de logements et d’auberges destinée aux voyageurs cherchant un hébergement pour leurs vacances. Ce projet a initialement été réalisé en HTML et CSS au début de ma formation sur OpenClassrooms, mettant l'accent sur les bases du développement web. Pour perfectionner mes compétences en React, j'ai décidé de recréer le site en React.",
     "images": [
-      "./img/booki01.png",
-      "./img/booki02.png"
+      "/img/booki01.png",
+      "/img/booki02.png"
     ],
     "objectif": "Recréer un site de réservation d'hébergements en utilisant React pour améliorer la gestion des composants et l'interactivité.",
     "technologies": [
@@ -110,10 +110,10 @@
     "description": "Ohmyfood est un site web dédié aux restaurants à proximité, permettant de découvrir leurs menus et leurs spécialités. Initialement réalisé en HTML, CSS et JavaScript, le projet a été recréé en React pour une meilleure gestion des composants et des performances.",
     "longDescription": "Ohmyfood est un site web dédié aux restaurants à proximité, permettant de découvrir leurs menus et leurs spécialités. Initialement réalisé en HTML, CSS et JavaScript, le projet a été recréé en React pour une meilleure gestion des composants et des performances. La page d'accueil présente le fonctionnement du site avec un aperçu des restaurants sous forme de cartes interactives. Lorsqu'un restaurant est sélectionné, l'utilisateur est redirigé vers une page de détails où les menus (entrées, plats, desserts) sont affichés. Le projet a été conçu en respectant fidèlement les maquettes et en intégrant des animations fluides pour offrir une expérience utilisateur agréable. Le site est entièrement responsive et optimisé pour une navigation sur desktop, tablette et mobile.",
     "images": [
-      "./img/homyfood-desktop01.png",
-      "./img/homyfood-desktop02.png",
-      "./img/homyfood-desktop03.png",
-      "./img/homyfood-desktop04.png"
+      "/img/homyfood-desktop01.png",
+      "/img/homyfood-desktop02.png",
+      "/img/homyfood-desktop03.png",
+      "/img/homyfood-desktop04.png"
     ],
     "objectif": "Créer un site responsive permettant de découvrir des restaurants locaux et leurs menus en utilisant React pour la gestion des composants et l'interactivité",
     "technologies": [
@@ -132,9 +132,9 @@
     "description": "Fisheye est un projet de refonte d'un site de photographie, réalisé à l'origine en HTML, CSS et JavaScript lors de ma formation OpenClassrooms. J'ai choisi de le réécrire entièrement en React pour approfondir mes compétences avec cette bibliothèque et son écosystème.",
     "longDescription": "Fisheye est un projet que j'ai réalisé dans le cadre de ma formation en développement web. Initialement créé en HTML, CSS et JavaScript, j'ai choisi de le réécrire en React pour renforcer mes compétences avec cette bibliothèque moderne. L'objectif était de transformer un site statique en une application dynamique et interactive, en utilisant des technologies modernes pour enrichir l'expérience utilisateur.",
     "images": [
-      "./img/fisheye01.png",
-      "./img/fisheye02.png",
-      "./img/fisheye03.png"
+      "/img/fisheye01.png",
+      "/img/fisheye02.png",
+      "/img/fisheye03.png"
     ],
     "objectif": "Réécrire un site de photographie en React pour rendre l'application dynamique et interactive.",
     "technologies": [
@@ -153,10 +153,10 @@
     "description": "Développement d’un composant interactif pour la configuration de fenêtres sur mesure dans une application SaaS.",
     "longDescription": "Au sein de l’entreprise, j’ai participé au développement d’une fonctionnalité clé intégrée à leur solution SaaS de configuration de fenêtres sur mesure.Mon rôle consistait à concevoir un composant interactif permettant aux utilisateurs de visualiser en temps réel leurs choix : dimensions de la fenêtre, ajout de petits-bois, soubassement, traverses, type et sens d’ouverture, nombre de vantaux ou encore modèles spécifiques comme les fenêtres avec arche.Cette fonctionnalité avait pour objectif d’améliorer l’expérience utilisateur en rendant la personnalisation intuitive et visuelle, tout en garantissant une parfaite intégration avec l’interface existante.",
     "images": [
-      "./img/exemple-fenetre-01.png",
-      "./img/exemple-fenetre-02.png",
-      "./img/exemple-fenetre-03.png",
-      "./img/exemple-fenetre-04.png"
+      "/img/exemple-fenetre-01.png",
+      "/img/exemple-fenetre-02.png",
+      "/img/exemple-fenetre-03.png",
+      "/img/exemple-fenetre-04.png"
     ],
     "objectif": "Intégrer une nouvelle fonctionnalité de configuration visuelle des fenêtres sur mesure afin d’enrichir l’offre SaaS de l’entreprise. L’ajout de ce module avait pour but de répondre à une demande client stratégique, d’améliorer la personnalisation du produit et de renforcer la compétitivité de la solution sur le marché.",
     "technologies": [
@@ -177,9 +177,9 @@
     "description": "Développement d’un script d’export JSON en SVG avec personnalisation des polices pour une application SaaS.",
     "longDescription": "Au sein de l’entreprise, j’ai participé au développement d’une fonctionnalité permettant d’exporter des données au format JSON vers un fichier SVG. Cette fonctionnalité offrait la possibilité de personnaliser l’export en modifiant le style de la police, d’ajouter des polices spécifiques et même d’importer de nouvelles polices pour enrichir le rendu final.Elle a été intégrée à la solution SaaS afin de répondre aux besoins d’un client spécialisé dans l’impression de tampons, qui nécessitait un rendu visuel précis et personnalisable avant impression.",
     "images": [
-      "./img/convert01.png",
-      "./img/convert-02.png",
-      "./img/convert-03.png"
+      "/img/convert01.png",
+      "/img/convert-02.png",
+      "/img/convert-03.png"
     ],
     "objectif": "Intégrer un outil d’export et de personnalisation visuelle des fichiers SVG afin d’élargir les possibilités offertes par le SaaS. Cette fonctionnalité avait pour but de répondre à une demande client stratégique dans le secteur de l’impression de tampons et de renforcer la valeur ajoutée de la solution.",
     "technologies": [
