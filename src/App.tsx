@@ -5,12 +5,14 @@ import Experience from "./components/Experience";
 import HeaderSection from "./components/HeaderSection";
 import ProjectDetail from "./components/ProjectDetails";
 import Projects from "./components/Projects";
+import ScrollToTop from "./components/ScrollToTop";
 import Skills from "./components/Skills";
 import Training from "./components/Training";
 
 function App() {
   return (
     <Router>
+      <ScrollToTop />
       <Routes>
         <Route
           path="/"

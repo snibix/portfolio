@@ -14,9 +14,9 @@ export default function Carousel({ id }: Props) {
       <div className="carousel w-full py-10">
         {projectImg.map((image, index) => (
           <div
-            key={index}
+            key={image}
             id={`slide${index + 1}`}
-            className="carousel-item relative w-full h-150"
+            className="carousel-item relative w-full h-130"
           >
             <img
               src={image}

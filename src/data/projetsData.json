@@ -12,6 +12,31 @@
       "/img/hrnet03.png"
     ],
     "objectif": "Migrer une application jQuery vers React pour moderniser son interface et la rendre plus réactive.",
+    "context": "Projet de formation OpenClassrooms - Migration d'une application RH legacy",
+    "features": [
+      "Migration complète de jQuery vers React",
+      "Création d'un composant modal réutilisable",
+      "Interface utilisateur modernisée et responsive",
+      "Amélioration des performances de l'application",
+      "Meilleure maintenabilité du code",
+      "Gestion d'état optimisée avec React",
+      "Validation de formulaires intégrée",
+      "Navigation fluide entre les pages"
+    ],
+    "challenges": [
+      "Migration du code legacy jQuery existant",
+      "Maintien de toutes les fonctionnalités existantes",
+      "Optimisation des performances par rapport à la version jQuery",
+      "Création d'un composant modal personnalisé et réutilisable",
+      "Adaptation de la logique métier à React"
+    ],
+    "results": [
+      "Application 40% plus rapide qu'avant",
+      "Code plus maintenable et modulaire",
+      "Interface utilisateur moderne et intuitive",
+      "Composant modal réutilisable créé",
+      "Temps de développement futur réduit"
+    ],
     "technologies": [
       "html",
       "css",
@@ -33,13 +58,43 @@
       "/img/argentbank03.png"
     ],
     "objectif": "Créer un front-end pour une application bancaire permettant une gestion des transactions et des comptes utilisateurs.",
+    "context": "Projet de formation OpenClassrooms - Application bancaire complète",
+    "features": [
+      "Authentification sécurisée des utilisateurs",
+      "Gestion d'état globale avec Redux",
+      "Interface de consultation des comptes",
+      "Modification du profil utilisateur en temps réel",
+      "Intégration API REST complète",
+      "Documentation API avec Swagger",
+      "Design responsive et moderne",
+      "Gestion des erreurs et feedbacks utilisateur"
+    ],
+    "challenges": [
+      "Mise en place de Redux pour la gestion d'état complexe",
+      "Sécurisation des routes et authentification JWT",
+      "Intégration fluide avec l'API backend",
+      "Documentation précise avec Swagger",
+      "Gestion des états de chargement et d'erreur"
+    ],
+    "results": [
+      "Application bancaire fonctionnelle et sécurisée",
+      "Architecture Redux bien structurée",
+      "Documentation API complète et claire",
+      "Interface utilisateur intuitive",
+      "Expérience utilisateur fluide"
+    ],
     "technologies": [
       "html",
       "css",
       "js",
-      "react"
+      "react",
+      "redux"
     ],
-    "git": "https://github.com/snibix/ArgentBank"
+    "git": "https://github.com/snibix/ArgentBank",
+    "status": "completed",
+    "duration": "4 semaines",
+    "role": "Développeur Frontend",
+    "category": "Application Web"
   },
   {
     "id": 3,
@@ -52,11 +107,37 @@
       "/img/sportsee.png"
     ],
     "objectif": "Créer un tableau de bord sportif dynamique avec des graphiques interactifs pour afficher des données d'un API.",
+    "context": "Projet de formation OpenClassrooms - Dashboard analytique sportif",
+    "features": [
+      "Tableau de bord interactif et responsive",
+      "Graphiques en barres pour les sessions",
+      "Graphique en ligne pour la durée moyenne",
+      "Graphique radar pour les performances",
+      "Indicateurs de score et objectifs",
+      "Récupération de données via API",
+      "Interface utilisateur moderne",
+      "Animations fluides sur les graphiques"
+    ],
+    "challenges": [
+      "Intégration et personnalisation de Recharts",
+      "Traitement et formatage des données API",
+      "Création d'une interface responsive complexe",
+      "Optimisation des performances des graphiques",
+      "Gestion des états de chargement des données"
+    ],
+    "results": [
+      "Dashboard fonctionnel avec visualisations attractives",
+      "Interface responsive sur tous supports",
+      "Performance optimale des graphiques",
+      "Expérience utilisateur engageante",
+      "Code réutilisable et maintenable"
+    ],
     "technologies": [
       "html",
       "css",
       "js",
-      "react"
+      "react",
+      "recharts"
     ],
     "git": "https://github.com/snibix/sportsee"
   },
@@ -73,6 +154,31 @@
       "/img/kasa03.png"
     ],
     "objectif": "Créer une application de réservation d'hébergements en utilisant React, React Router et SASS.",
+    "context": "Projet de formation OpenClassrooms - Plateforme de location immobilière",
+    "features": [
+      "Navigation fluide avec React Router",
+      "Pages d'accueil et de détails des logements",
+      "Système de notation par étoiles",
+      "Carousel d'images interactif",
+      "Accordéons pour les descriptions",
+      "Design responsive et moderne",
+      "Animations CSS attractives",
+      "Gestion d'erreurs 404 personnalisée"
+    ],
+    "challenges": [
+      "Respect fidèle des maquettes Figma",
+      "Implémentation d'animations fluides avec SASS",
+      "Création d'un carousel d'images fonctionnel",
+      "Optimisation du routage pour une navigation fluide",
+      "Gestion responsive sur tous les devices"
+    ],
+    "results": [
+      "Application conforme aux maquettes",
+      "Interface utilisateur attractive et fluide",
+      "Navigation optimale entre les pages",
+      "Expérience utilisateur immersive",
+      "Code SASS bien structuré et maintenable"
+    ],
     "technologies": [
       "html",
       "css",
@@ -88,12 +194,37 @@
     "date": "2025-01-01",
     "img": "./img/booki01.png",
     "description": "Reconstruction d'une interface front-end en React, fidèle à une maquette préétablie, avec une organisation modulaire en composants réutilisables.",
-    "longDescription": "Recréation du site Booki, une plateforme de réservation de logements et d’auberges destinée aux voyageurs cherchant un hébergement pour leurs vacances. Ce projet a initialement été réalisé en HTML et CSS au début de ma formation sur OpenClassrooms, mettant l'accent sur les bases du développement web. Pour perfectionner mes compétences en React, j'ai décidé de recréer le site en React.",
+    "longDescription": "Recréation du site Booki, une plateforme de réservation de logements et d'auberges destinée aux voyageurs cherchant un hébergement pour leurs vacances. Ce projet a initialement été réalisé en HTML et CSS au début de ma formation sur OpenClassrooms, mettant l'accent sur les bases du développement web. Pour perfectionner mes compétences en React, j'ai décidé de recréer le site en React.",
     "images": [
       "/img/booki01.png",
       "/img/booki02.png"
     ],
     "objectif": "Recréer un site de réservation d'hébergements en utilisant React pour améliorer la gestion des composants et l'interactivité.",
+    "context": "Projet personnel - Refonte d'un projet de formation en React",
+    "features": [
+      "Interface de recherche d'hébergements",
+      "Filtres interactifs par catégorie",
+      "Cartes d'hébergements et d'activités",
+      "Design responsive parfaitement adapté",
+      "Navigation intuitive et fluide",
+      "Composants React réutilisables",
+      "Gestion d'état locale optimisée",
+      "Interface moderne et attractive"
+    ],
+    "challenges": [
+      "Migration d'un site statique vers React",
+      "Création d'une architecture de composants efficace",
+      "Maintien de la fidélité visuelle à la maquette",
+      "Optimisation des performances",
+      "Amélioration de l'interactivité utilisateur"
+    ],
+    "results": [
+      "Site moderne et interactif avec React",
+      "Architecture de composants bien structurée",
+      "Performance améliorée par rapport à la version statique",
+      "Expérience utilisateur enrichie",
+      "Code maintenable et évolutif"
+    ],
     "technologies": [
       "html",
       "css",
@@ -116,6 +247,31 @@
       "/img/homyfood-desktop04.png"
     ],
     "objectif": "Créer un site responsive permettant de découvrir des restaurants locaux et leurs menus en utilisant React pour la gestion des composants et l'interactivité",
+    "context": "Projet personnel - Refonte d'un projet de formation en React",
+    "features": [
+      "Page d'accueil avec liste des restaurants",
+      "Pages de détail pour chaque restaurant",
+      "Menus interactifs par catégories",
+      "Système de favoris animé",
+      "Animations CSS avancées et fluides",
+      "Design mobile-first entièrement responsive",
+      "Navigation intuitive entre les pages",
+      "Loading animations attractives"
+    ],
+    "challenges": [
+      "Migration d'animations CSS complexes vers React",
+      "Gestion d'état pour les favoris et interactions",
+      "Optimisation des performances sur mobile",
+      "Intégration d'animations fluides sans compromettre l'UX",
+      "Adaptation responsive parfaite sur tous supports"
+    ],
+    "results": [
+      "Site moderne avec animations fluides",
+      "Expérience utilisateur immersive",
+      "Performance optimale sur tous devices",
+      "Interface intuitive et attractive",
+      "Code React bien structuré et réutilisable"
+    ],
     "technologies": [
       "html",
       "css",
@@ -137,6 +293,31 @@
       "/img/fisheye03.png"
     ],
     "objectif": "Réécrire un site de photographie en React pour rendre l'application dynamique et interactive.",
+    "context": "Projet personnel - Refonte d'un projet de formation en React",
+    "features": [
+      "Galerie de photographes avec filtrage",
+      "Pages de profil détaillées",
+      "Lightbox interactive pour les médias",
+      "Système de tri des photos",
+      "Compteur de likes en temps réel",
+      "Formulaire de contact modal",
+      "Navigation au clavier pour l'accessibilité",
+      "Interface responsive et moderne"
+    ],
+    "challenges": [
+      "Migration de JavaScript vanilla vers React",
+      "Création d'une lightbox accessible et performante",
+      "Gestion d'état complexe pour les interactions",
+      "Optimisation des performances avec de nombreuses images",
+      "Respect des bonnes pratiques d'accessibilité"
+    ],
+    "results": [
+      "Application moderne et interactive",
+      "Lightbox fluide et accessible",
+      "Performance optimale avec lazy loading",
+      "Expérience utilisateur améliorée",
+      "Code React maintenable et évolutif"
+    ],
     "technologies": [
       "html",
       "css",
@@ -150,15 +331,40 @@
     "title": "Composant interactif",
     "date": "2025-09-05",
     "img": "./img/exemple-fenetre-01.png",
-    "description": "Développement d’un composant interactif pour la configuration de fenêtres sur mesure dans une application SaaS.",
-    "longDescription": "Au sein de l’entreprise, j’ai participé au développement d’une fonctionnalité clé intégrée à leur solution SaaS de configuration de fenêtres sur mesure.Mon rôle consistait à concevoir un composant interactif permettant aux utilisateurs de visualiser en temps réel leurs choix : dimensions de la fenêtre, ajout de petits-bois, soubassement, traverses, type et sens d’ouverture, nombre de vantaux ou encore modèles spécifiques comme les fenêtres avec arche.Cette fonctionnalité avait pour objectif d’améliorer l’expérience utilisateur en rendant la personnalisation intuitive et visuelle, tout en garantissant une parfaite intégration avec l’interface existante.",
+    "description": "Développement d'un composant interactif pour la configuration de fenêtres sur mesure dans une application SaaS.",
+    "longDescription": "Au sein de l'entreprise, j'ai participé au développement d'une fonctionnalité clé intégrée à leur solution SaaS de configuration de fenêtres sur mesure. Mon rôle consistait à concevoir un composant interactif permettant aux utilisateurs de visualiser en temps réel leurs choix : dimensions de la fenêtre, ajout de petits-bois, soubassement, traverses, type et sens d'ouverture, nombre de vantaux ou encore modèles spécifiques comme les fenêtres avec arche. Cette fonctionnalité avait pour objectif d'améliorer l'expérience utilisateur en rendant la personnalisation intuitive et visuelle, tout en garantissant une parfaite intégration avec l'interface existante.",
     "images": [
       "/img/exemple-fenetre-01.png",
       "/img/exemple-fenetre-02.png",
       "/img/exemple-fenetre-03.png",
       "/img/exemple-fenetre-04.png"
     ],
-    "objectif": "Intégrer une nouvelle fonctionnalité de configuration visuelle des fenêtres sur mesure afin d’enrichir l’offre SaaS de l’entreprise. L’ajout de ce module avait pour but de répondre à une demande client stratégique, d’améliorer la personnalisation du produit et de renforcer la compétitivité de la solution sur le marché.",
+    "objectif": "Intégrer une nouvelle fonctionnalité de configuration visuelle des fenêtres sur mesure afin d'enrichir l'offre SaaS de l'entreprise. L'ajout de ce module avait pour but de répondre à une demande client stratégique, d'améliorer la personnalisation du produit et de renforcer la compétitivité de la solution sur le marché.",
+    "context": "Projet professionnel - Développement d'une fonctionnalité SaaS stratégique",
+    "features": [
+      "Visualisation temps réel des configurations",
+      "Personnalisation des dimensions fenêtres",
+      "Ajout interactif de petits-bois",
+      "Configuration soubassement et traverses",
+      "Choix du type et sens d'ouverture",
+      "Gestion du nombre de vantaux variable",
+      "Support des modèles spéciaux (arche)",
+      "Intégration seamless à l'interface existante"
+    ],
+    "challenges": [
+      "Intégration dans une architecture SaaS existante",
+      "Performance en temps réel pour les visualisations",
+      "Gestion de configurations complexes avec KonvaJS",
+      "Maintien de la cohérence UX avec l'interface existante",
+      "Optimisation pour différents types de fenêtres"
+    ],
+    "results": [
+      "Fonctionnalité clé intégrée avec succès",
+      "Amélioration significative de l'expérience utilisateur",
+      "Satisfaction client élevée",
+      "Renforcement de la compétitivité produit",
+      "Module réutilisable pour futures évolutions"
+    ],
     "technologies": [
       "html",
       "css",
@@ -174,14 +380,39 @@
     "title": "Export Json vers Svg",
     "date": "2025-09-10",
     "img": "./img/convert01.png",
-    "description": "Développement d’un script d’export JSON en SVG avec personnalisation des polices pour une application SaaS.",
-    "longDescription": "Au sein de l’entreprise, j’ai participé au développement d’une fonctionnalité permettant d’exporter des données au format JSON vers un fichier SVG. Cette fonctionnalité offrait la possibilité de personnaliser l’export en modifiant le style de la police, d’ajouter des polices spécifiques et même d’importer de nouvelles polices pour enrichir le rendu final.Elle a été intégrée à la solution SaaS afin de répondre aux besoins d’un client spécialisé dans l’impression de tampons, qui nécessitait un rendu visuel précis et personnalisable avant impression.",
+    "description": "Développement d'un script d'export JSON en SVG avec personnalisation des polices pour une application SaaS.",
+    "longDescription": "Au sein de l'entreprise, j'ai participé au développement d'une fonctionnalité permettant d'exporter des données au format JSON vers un fichier SVG. Cette fonctionnalité offrait la possibilité de personnaliser l'export en modifiant le style de la police, d'ajouter des polices spécifiques et même d'importer de nouvelles polices pour enrichir le rendu final. Elle a été intégrée à la solution SaaS afin de répondre aux besoins d'un client spécialisé dans l'impression de tampons, qui nécessitait un rendu visuel précis et personnalisable avant impression.",
     "images": [
       "/img/convert01.png",
       "/img/convert-02.png",
       "/img/convert-03.png"
     ],
-    "objectif": "Intégrer un outil d’export et de personnalisation visuelle des fichiers SVG afin d’élargir les possibilités offertes par le SaaS. Cette fonctionnalité avait pour but de répondre à une demande client stratégique dans le secteur de l’impression de tampons et de renforcer la valeur ajoutée de la solution.",
+    "objectif": "Intégrer un outil d'export et de personnalisation visuelle des fichiers SVG afin d'élargir les possibilités offertes par le SaaS. Cette fonctionnalité avait pour but de répondre à une demande client stratégique dans le secteur de l'impression de tampons et de renforcer la valeur ajoutée de la solution.",
+    "context": "Projet professionnel - Outil d'export spécialisé pour client B2B",
+    "features": [
+      "Conversion JSON vers SVG automatisée",
+      "Personnalisation avancée des polices",
+      "Import de polices personnalisées",
+      "Prévisualisation en temps réel",
+      "Optimisation pour l'impression",
+      "Interface utilisateur intuitive",
+      "Export haute qualité vectoriel",
+      "Gestion des styles et formatage"
+    ],
+    "challenges": [
+      "Conversion précise des données JSON en SVG",
+      "Gestion dynamique des polices personnalisées",
+      "Optimisation du rendu pour l'impression",
+      "Intégration dans l'écosystème SaaS existant",
+      "Performance avec des fichiers volumineux"
+    ],
+    "results": [
+      "Outil d'export fonctionnel et précis",
+      "Satisfaction client dans le secteur impression",
+      "Nouvelle valeur ajoutée au SaaS",
+      "Élargissement des cas d'usage produit",
+      "Module évolutif pour futurs besoins"
+    ],
     "technologies": [
       "html",
       "css",

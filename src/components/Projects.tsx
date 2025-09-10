@@ -1,10 +1,10 @@
-import { useState } from "react";
+import React, { useState } from "react";
 import { DiCss3, DiHtml5, DiJavascript1, DiReact } from "react-icons/di";
 import { SiBootstrap, SiKonva, SiSass, SiTailwindcss } from "react-icons/si";
 import { Link } from "react-router-dom";
 import projectsData from "../data/projetsData.json";
 
-const techIcons: { [key: string]: JSX.Element } = {
+const techIcons: { [key: string]: React.JSX.Element } = {
   html: <DiHtml5 color="#e34f26" size={30} />,
   css: <DiCss3 color="#1572B6" size={30} />,
   js: <DiJavascript1 color="#f7df1e" size={30} />,
@@ -48,8 +48,8 @@ const Projects = () => {
               <p className="text-gray-600">{project.description}</p>
 
               <div className="card-actions mt-2 flex flex-wrap gap-2">
-                {project.technologies.map((tech: string, index: number) => (
-                  <div key={index} className="flex items-center">
+                {project.technologies.map((tech: string) => (
+                  <div key={tech} className="flex items-center">
                     {techIcons[tech]}
                   </div>
                 ))}
