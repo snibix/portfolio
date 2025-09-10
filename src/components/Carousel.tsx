@@ -16,14 +16,14 @@ export default function Carousel({ id }: Props) {
           <div
             key={image}
             id={`slide${index + 1}`}
-            className="carousel-item relative w-full h-130"
+            className="carousel-item relative w-full h-50 md:h-150"
           >
             <img
               src={image}
               className="w-full object-fill"
               alt={`slide-${index}`}
             />
-
+            {/* TODO: Faire le responsive des boutons mobile */}
             {projectImg.length > 1 && (
               <div className="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
                 <a

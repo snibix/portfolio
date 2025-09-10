@@ -6,15 +6,18 @@ import { Link, useParams } from "react-router-dom";
 import projects from "../data/projetsData.json";
 import Carousel from "./Carousel";
 
-const techIcons: { [key: string]: React.JSX.Element } = {
-  html: <DiHtml5 color="#e34f26" size={70} />,
-  css: <DiCss3 color="#1572B6" size={70} />,
-  js: <DiJavascript1 color="#f7df1e" size={70} />,
-  react: <DiReact color="#61dafb" size={70} />,
-  tailwind: <SiTailwindcss color="#38bdf8" size={70} />,
-  bootstrap: <SiBootstrap color="#7952b3" size={70} />,
-  sass: <SiSass color="#7952b3" size={70} />,
-  konvajs: <SiKonva size={70} />,
+// Version responsive des icônes selon la taille d'écran
+const responsiveTechIcons: {
+  [key: string]: (size: number) => React.JSX.Element;
+} = {
+  html: (size) => <DiHtml5 color="#e34f26" size={size} />,
+  css: (size) => <DiCss3 color="#1572B6" size={size} />,
+  js: (size) => <DiJavascript1 color="#f7df1e" size={size} />,
+  react: (size) => <DiReact color="#61dafb" size={size} />,
+  tailwind: (size) => <SiTailwindcss color="#38bdf8" size={size} />,
+  bootstrap: (size) => <SiBootstrap color="#7952b3" size={size} />,
+  sass: (size) => <SiSass color="#7952b3" size={size} />,
+  konvajs: (size) => <SiKonva size={size} />,
 };
 
 const ProjectDetail = () => {
@@ -38,22 +41,45 @@ const ProjectDetail = () => {
         {project.title}
       </h1>
 
-      {/* Carousel d'images */}
-      <div className="mb-8">
-        <Carousel id={project.id} />
+      {/* Carousel d'images - Version responsive */}
+      <div className="mb-6 sm:mb-8 md:mb-10 lg:mb-12">
+        <div className="w-full max-w-sm sm:max-w-md md:max-w-2xl lg:max-w-4xl xl:max-w-6xl mx-auto">
+          <Carousel id={project.id} />
+        </div>
       </div>
 
-      {/* Technologies utilisées */}
-      <div className="mb-8">
-        <h2 className="text-3xl font-semibold mb-4 text-gray-900">
+      {/* Technologies utilisées - Version responsive */}
+      <div className="mb-6 sm:mb-8 md:mb-10">
+        <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-semibold mb-3 sm:mb-4 md:mb-6 text-gray-900 text-center">
           Technologies utilisées
         </h2>
-        <div className="flex gap-4 text-3xl justify-center bg-white p-6 rounded-lg shadow-lg">
-          {project.technologies.map((tech: string) => (
-            <span key={tech} className="hover:scale-110 transition-transform">
-              {techIcons[tech]}
-            </span>
-          ))}
+        <div className="bg-white p-3 sm:p-4 md:p-6 lg:p-8 rounded-lg shadow-lg">
+          {/* Grid responsive pour les icônes */}
+          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 xl:flex xl:justify-center gap-3 sm:gap-4 md:gap-6 lg:gap-8 xl:gap-10">
+            {project.technologies.map((tech: string) => (
+              <div
+                key={tech}
+                className="flex justify-center items-center hover:scale-110 transition-transform duration-200 p-2 sm:p-3 md:p-4"
+              >
+                {/* Icônes responsives */}
+                <div className="block sm:hidden">
+                  {responsiveTechIcons[tech](40)}
+                </div>
+                <div className="hidden sm:block md:hidden">
+                  {responsiveTechIcons[tech](50)}
+                </div>
+                <div className="hidden md:block lg:hidden">
+                  {responsiveTechIcons[tech](60)}
+                </div>
+                <div className="hidden lg:block xl:hidden">
+                  {responsiveTechIcons[tech](65)}
+                </div>
+                <div className="hidden xl:block">
+                  {responsiveTechIcons[tech](70)}
+                </div>
+              </div>
+            ))}
+          </div>
         </div>
       </div>
 

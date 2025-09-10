@@ -1,12 +1,12 @@
 export default function Training() {
   return (
-    <div className="bg-white">
+    <div className="bg-white" id="training">
       <div className="mx-auto">
-        <div className="relative isolate overflow-hidden bg-gray-900 px-6 h-150 pt-16 shadow-2xl sm:px-16 md:pt-24 lg:flex-column lg:gap-x-20 lg:px-24 lg:pt-0">
+        <div className="relative isolate overflow-hidden bg-gray-900 px-4 sm:px-6 md:px-8 lg:px-16 xl:px-24 py-8 sm:py-12 md:py-16 lg:py-20 shadow-2xl">
           <svg
             viewBox="0 0 1024 1024"
             aria-hidden="true"
-            className="absolute top-1/2 left-1/2 -z-10 size-256 -translate-y-1/2 mask-[radial-gradient(closest-side,white,transparent)] sm:left-full sm:-ml-80 lg:left-1/2 lg:ml-0 lg:-translate-x-1/2 lg:translate-y-0"
+            className="absolute top-1/2 left-1/2 -z-10 w-64 h-64 sm:w-80 sm:h-80 md:w-96 md:h-96 lg:w-[32rem] lg:h-[32rem] -translate-y-1/2 -translate-x-1/2 mask-[radial-gradient(closest-side,white,transparent)] opacity-70"
           >
             <circle
               r={512}
@@ -24,18 +24,22 @@ export default function Training() {
           </svg>
 
           <h2
-            className="text-white text-5xl w-auto text-center pt-10 font-semibold"
+            className="text-white text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl text-center mb-8 sm:mb-12 md:mb-16 lg:mb-20 font-semibold"
             id="training"
           >
             Mes Formations
           </h2>
-          <div className="flex justify-evenly">
-            <div className="mx-auto max-w-[40%] text-center lg:mx-0 lg:flex-auto lg:py-15 lg:text-left">
-              <h2 className="text-3xl font-semibold tracking-tight text-balance text-white sm:text-md">
-                Développeur Concepteur Logiciel <br /> OpenClassRooms <br />
-                <span className="text-xl">10/2023 - 12/2024</span>
-              </h2>
-              <p className="mt-6 text-lg/8 text-pretty text-gray-300 h-50">
+
+          <div className="flex flex-col lg:flex-row justify-center lg:justify-evenly gap-8 md:gap-12 lg:gap-16 xl:gap-20">
+            <div className="w-full lg:max-w-[45%] xl:max-w-[40%] text-center lg:text-left space-y-4 sm:space-y-6">
+              <h3 className="text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl font-semibold tracking-tight text-balance text-white leading-tight">
+                Développeur Concepteur Logiciel <br />
+                <span className="text-purple-300">OpenClassRooms</span> <br />
+                <span className="text-base sm:text-lg md:text-xl lg:text-2xl text-gray-400 font-normal">
+                  10/2023 - 12/2024
+                </span>
+              </h3>
+              <p className="text-sm sm:text-base md:text-lg lg:text-xl leading-relaxed text-pretty text-gray-300">
                 Formation pratique centrée sur le développement front-end, avec
                 14 projets progressifs permettant une montée en compétences
                 complète. Le parcours débute par des bases en HTML et CSS, se
@@ -47,13 +51,16 @@ export default function Training() {
                 dynamiques.
               </p>
             </div>
-            <div className="mx-auto max-w-[40%] text-center lg:mx-0 lg:flex-auto lg:py-15 lg:text-left">
-              <h2 className="text-3xl font-semibold tracking-tight text-balance text-white sm:text-md">
+
+            <div className="w-full lg:max-w-[45%] xl:max-w-[40%] text-center lg:text-left space-y-4 sm:space-y-6">
+              <h3 className="text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl font-semibold tracking-tight text-balance text-white leading-tight">
                 Développeur Web <br />
-                CCI CAMPUS <br />
-                <span className="text-xl">10/2023 - 12/2024</span>
-              </h2>
-              <p className="mt-6 text-lg/8 text-pretty text-gray-300">
+                <span className="text-purple-300">CCI CAMPUS</span> <br />
+                <span className="text-base sm:text-lg md:text-xl lg:text-2xl text-gray-400 font-normal">
+                  10/2023 - 12/2024
+                </span>
+              </h3>
+              <p className="text-sm sm:text-base md:text-lg lg:text-xl leading-relaxed text-pretty text-gray-300">
                 Formation de 11 mois, axée sur les fondamentaux du développement
                 web avec des langages et technologies essentiels : HTML, CSS,
                 JavaScript, PHP et MySQL. Durant cette formation, j'ai réalisé
