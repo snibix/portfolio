@@ -1,4 +1,28 @@
+import { motion, useInView } from "motion/react";
+import { useRef } from "react";
+
 export default function Experiences() {
+  const ref = useRef(null);
+  const isInView = useInView(ref, { once: true });
+
+  const SlideUp = {
+    initial: { opacity: 0, y: -100 },
+    animate: isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: -100 },
+    transition: { duration: 0.8 },
+  };
+
+  const SlideRight = {
+    initial: { opacity: 0, x: 100 },
+    animate: isInView ? { opacity: 1, x: 0 } : { opacity: 0, x: 100 },
+    transition: { duration: 0.8 },
+  };
+
+  const SlideLeft = {
+    initial: { opacity: 0, x: -100 },
+    animate: isInView ? { opacity: 1, x: 0 } : { opacity: 0, x: -100 },
+    transition: { duration: 0.8 },
+  };
+
   return (
     <div className="bg-white" id="experience">
       <div className="mx-auto">
@@ -23,12 +47,20 @@ export default function Experiences() {
             </defs>
           </svg>
 
-          <h2 className="text-white text-2xl sm:text-3xl md:text-4xl lg:text-5xl text-center mb-8 sm:mb-12 md:mb-16 lg:mb-20 font-semibold">
+          <motion.h2
+            className="text-white text-2xl sm:text-3xl md:text-4xl lg:text-5xl text-center mb-8 sm:mb-12 md:mb-16 lg:mb-20 font-semibold"
+            ref={ref}
+            {...SlideUp}
+          >
             Mes Experiences
-          </h2>
+          </motion.h2>
 
-          <div className="flex flex-col lg:flex-row justify-center lg:justify-evenly gap-8 md:gap-12 lg:gap-16 xl:gap-20">
-            <div className="w-full lg:max-w-[45%] xl:max-w-[40%] text-center lg:text-left space-y-4 sm:space-y-6">
+          <div className="flex flex-col lg:flex-row justify-center lg:justify-evenly gap-8 md:gap-12 lg:gap-16 xl:gap-20 overflow-x-hidden">
+            <motion.div
+              className="w-full lg:max-w-[45%] xl:max-w-[40%] text-center lg:text-left space-y-4 sm:space-y-6"
+              ref={ref}
+              {...SlideLeft}
+            >
               <h3 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-semibold tracking-tight text-balance text-white leading-tight">
                 Incubateur de compétences <br />
                 <span className="text-purple-300">DM Concept</span> <br />
@@ -51,9 +83,13 @@ export default function Experiences() {
                 familiariser avec les enjeux techniques d'une solution B2B en
                 production.
               </p>
-            </div>
+            </motion.div>
 
-            <div className="w-full lg:max-w-[45%] xl:max-w-[40%] text-center lg:text-left space-y-4 sm:space-y-6">
+            <motion.div
+              className="w-full lg:max-w-[45%] xl:max-w-[40%] text-center lg:text-left space-y-4 sm:space-y-6 overflow-x-hidden"
+              ref={ref}
+              {...SlideRight}
+            >
               <h3 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-semibold tracking-tight text-balance text-white leading-tight">
                 Stage de formation <br />
                 <span className="text-purple-300">KR-Barber</span> <br />
@@ -70,7 +106,7 @@ export default function Experiences() {
                 d'approfondir progressivement les acquis, un site e-commerce
                 complet, et un site de suite au stage.
               </p>
-            </div>
+            </motion.div>
           </div>
         </div>
       </div>

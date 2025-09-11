@@ -1,8 +1,31 @@
+import { motion, useInView } from "motion/react";
+import { useRef } from "react";
+
 export default function Training() {
+  const ref = useRef(null);
+  const isInView = useInView(ref, { once: true });
+
+  const SlideUp = {
+    initial: { opacity: 0, y: -100 },
+    animate: isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: -100 },
+    transition: { duration: 0.8 },
+  };
+
+  const SlideRight = {
+    initial: { opacity: 0, x: 100 },
+    animate: isInView ? { opacity: 1, x: 0 } : { opacity: 0, x: 100 },
+    transition: { duration: 0.8 },
+  };
+
+  const SlideLeft = {
+    initial: { opacity: 0, x: -100 },
+    animate: isInView ? { opacity: 1, x: 0 } : { opacity: 0, x: -100 },
+    transition: { duration: 0.8 },
+  };
   return (
     <div className="bg-white" id="training">
       <div className="mx-auto">
-        <div className="relative isolate overflow-hidden bg-gray-900 px-4 sm:px-6 md:px-8 lg:px-16 xl:px-24 py-8 sm:py-12 md:py-16 lg:py-20 shadow-2xl">
+        <div className="relative isolate overflow-hidden bg-gray-900 px-4 sm:px-6 md:px-8 lg:px-16 xl:px-24 py-8 sm:py-12 md:py-16 lg:py-20 shadow-2xl  overflow-x-hidden">
           <svg
             viewBox="0 0 1024 1024"
             aria-hidden="true"
@@ -23,15 +46,21 @@ export default function Training() {
             </defs>
           </svg>
 
-          <h2
+          <motion.h2
+            {...SlideUp}
+            ref={ref}
             className="text-white text-2xl sm:text-3xl md:text-4xl lg:text-5xl text-center mb-8 sm:mb-12 md:mb-16 lg:mb-20 font-semibold"
             id="training"
           >
             Mes Formations
-          </h2>
+          </motion.h2>
 
           <div className="flex flex-col lg:flex-row justify-center lg:justify-evenly gap-8 md:gap-12 lg:gap-16 xl:gap-20">
-            <div className="w-full lg:max-w-[45%] xl:max-w-[40%] text-center lg:text-left space-y-4 sm:space-y-6">
+            <motion.div
+              className="w-full lg:max-w-[45%] xl:max-w-[40%] text-center lg:text-left space-y-4 sm:space-y-6 overflow-x-hidden"
+              ref={ref}
+              {...SlideLeft}
+            >
               <h3 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-semibold tracking-tight text-balance text-white leading-tight">
                 Développeur Concepteur Logiciel <br />
                 <span className="text-purple-300">OpenClassRooms</span> <br />
@@ -50,9 +79,13 @@ export default function Training() {
                 programmation, gestion de données et conception d'interfaces
                 dynamiques.
               </p>
-            </div>
+            </motion.div>
 
-            <div className="w-full lg:max-w-[45%] xl:max-w-[40%] text-center lg:text-left space-y-4 sm:space-y-6">
+            <motion.div
+              className="w-full lg:max-w-[45%] xl:max-w-[40%] text-center lg:text-left space-y-4 sm:space-y-6"
+              ref={ref}
+              {...SlideRight}
+            >
               <h3 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-semibold tracking-tight text-balance text-white leading-tight">
                 Développeur Web <br />
                 <span className="text-purple-300">CCI CAMPUS</span> <br />
@@ -69,7 +102,7 @@ export default function Training() {
                 d'approfondir progressivement les acquis, un site e-commerce
                 complet, et un site de suite au stage.
               </p>
-            </div>
+            </motion.div>
           </div>
         </div>
       </div>
