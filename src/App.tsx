@@ -13,7 +13,7 @@ import Training from "./components/Training";
 
 function App() {
   return (
-    <Router>
+    <Router basename="/Portfolio">
       <ScrollToTop />
       <Routes>
         <Route
