@@ -5,6 +5,7 @@ const links = [
   { name: "Mes Formations", href: "#training" },
   { name: "Mes Projets", href: "#project" },
   { name: "Mes Expériences", href: "#experience" },
+  { name: "Mon Github", href: "#git" },
   { name: "Contact", href: "#contact" },
 ];
 
@@ -37,7 +38,7 @@ export default function HeaderSection() {
       </div>
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="mx-auto max-w-2xl lg:mx-0">
-          <h2 className="text-6xl font-semibold tracking-tight text-white sm:text-6xl">
+          <h2 className="text-3xl sm:text-3xl md:text-4xl lg:text-5xl font-semibold tracking-tight text-white sm:text-6xl">
             Jaworski Damien <br />
             Développeur Web
           </h2>

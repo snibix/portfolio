@@ -2,7 +2,7 @@ import React from "react";
 
 const Contact: React.FC = () => {
   return (
-    <div className="py-10 px-4 max-w-3xl mx-auto" id="contact">
+    <div className="py-20 px-4 max-w-3xl mx-auto" id="contact">
       <h2 className="text-3xl font-semibold text-center mb-4">Contactez-moi</h2>
       <p className="text-center mb-8">
         N&#39;hésitez pas à me contacter pour toute question ou proposition de
