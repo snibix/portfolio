@@ -23,22 +23,28 @@ export default function Carousel({ id }: Props) {
               className="w-full object-fill"
               alt={`slide-${index}`}
             />
-            {/* TODO: Faire le responsive des boutons mobile */}
+
             {projectImg.length > 1 && (
-              <div className="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+              <div className="absolute left-2 right-2 sm:left-2 sm:right-2 md:left-1 md:right-1 top-1/2 flex -translate-y-1/2 transform justify-between">
                 <a
                   href={`#slide${index === 0 ? projectImg.length : index}`}
-                  className="bg-white rounded-full p-3 text-blue-600 hover:bg-blue-50 transition-all duration-300 hover:scale-110 hover:rotate-12 shadow-lg hover:shadow-xl"
+                  className="bg-white rounded-full p-2 sm:p-3 text-blue-600 hover:bg-blue-50 transition-all duration-300 hover:scale-110 hover:rotate-12 shadow-lg hover:shadow-xl"
                 >
-                  <BiChevronLeft size={50} className="text-gray-800" />
+                  <BiChevronLeft
+                    size={30}
+                    className="sm:w-[50px] sm:h-[50px] text-gray-800"
+                  />
                 </a>
                 <a
                   href={`#slide${
                     index + 2 > projectImg.length ? 1 : index + 2
                   }`}
-                  className="bg-white rounded-full p-3 text-blue-600 hover:bg-blue-50 transition-all duration-300 hover:scale-110 hover:rotate-12 shadow-lg hover:shadow-xl"
+                  className="bg-white rounded-full p-2 sm:p-3 text-blue-600 hover:bg-blue-50 transition-all duration-300 hover:scale-110 hover:rotate-12 shadow-lg hover:shadow-xl"
                 >
-                  <BiChevronRight size={50} className="text-gray-900" />
+                  <BiChevronRight
+                    size={30}
+                    className="sm:w-[50px] sm:h-[50px] text-gray-900"
+                  />
                 </a>
               </div>
             )}

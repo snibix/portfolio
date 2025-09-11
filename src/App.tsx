@@ -2,6 +2,7 @@ import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
 import "./App.css";
 import Contact from "./components/Contact";
 import Experience from "./components/Experience";
+import Footer from "./components/Footer";
 import HeaderSection from "./components/HeaderSection";
 import ProjectDetail from "./components/ProjectDetails";
 import Projects from "./components/Projects";
@@ -29,6 +30,7 @@ function App() {
         />
         <Route path="/projet/:id" element={<ProjectDetail />} />
       </Routes>
+      <Footer />
     </Router>
   );
 }

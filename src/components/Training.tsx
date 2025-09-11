@@ -24,7 +24,7 @@ export default function Training() {
           </svg>
 
           <h2
-            className="text-white text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl text-center mb-8 sm:mb-12 md:mb-16 lg:mb-20 font-semibold"
+            className="text-white text-2xl sm:text-3xl md:text-4xl lg:text-5xl text-center mb-8 sm:mb-12 md:mb-16 lg:mb-20 font-semibold"
             id="training"
           >
             Mes Formations
@@ -32,7 +32,7 @@ export default function Training() {
 
           <div className="flex flex-col lg:flex-row justify-center lg:justify-evenly gap-8 md:gap-12 lg:gap-16 xl:gap-20">
             <div className="w-full lg:max-w-[45%] xl:max-w-[40%] text-center lg:text-left space-y-4 sm:space-y-6">
-              <h3 className="text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl font-semibold tracking-tight text-balance text-white leading-tight">
+              <h3 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-semibold tracking-tight text-balance text-white leading-tight">
                 Développeur Concepteur Logiciel <br />
                 <span className="text-purple-300">OpenClassRooms</span> <br />
                 <span className="text-base sm:text-lg md:text-xl lg:text-2xl text-gray-400 font-normal">
@@ -53,7 +53,7 @@ export default function Training() {
             </div>
 
             <div className="w-full lg:max-w-[45%] xl:max-w-[40%] text-center lg:text-left space-y-4 sm:space-y-6">
-              <h3 className="text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl font-semibold tracking-tight text-balance text-white leading-tight">
+              <h3 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-semibold tracking-tight text-balance text-white leading-tight">
                 Développeur Web <br />
                 <span className="text-purple-300">CCI CAMPUS</span> <br />
                 <span className="text-base sm:text-lg md:text-xl lg:text-2xl text-gray-400 font-normal">
