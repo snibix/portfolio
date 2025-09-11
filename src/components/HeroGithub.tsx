@@ -1,4 +1,6 @@
 import { useEffect, useState } from "react";
+import { FaFolder } from "react-icons/fa";
+import { FiUser } from "react-icons/fi";
 
 // Définition des types pour GitHub API
 interface GithubProfile {
@@ -58,8 +60,14 @@ export default function GithubSection() {
           <p className="mt-2 text-sm text-gray-900">{profile.bio}</p>
 
           <div className="flex gap-6 mt-4 text-sm text-gray-900">
-            <span>👥 {profile.followers} followers</span>
-            <span>📂 {profile.public_repos} repos</span>
+            <span className="flex items-center">
+              <FiUser size={20} className="mx-2" /> {profile.followers}{" "}
+              followers
+            </span>
+            <span className="flex items-center">
+              <FaFolder size={20} className="mx-2" /> {profile.public_repos}{" "}
+              repos
+            </span>
           </div>
 
           <a
