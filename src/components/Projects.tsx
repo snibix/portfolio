@@ -54,7 +54,11 @@ const Projects = () => {
         Mes Projets
       </motion.h2>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+      <motion.div
+        className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6"
+        ref={ref}
+        {...SlideUp}
+      >
         {displayedProjects.map((project) => (
           <motion.div
             key={project.id}
@@ -93,7 +97,7 @@ const Projects = () => {
             </div>
           </motion.div>
         ))}
-      </div>
+      </motion.div>
 
       {sortedProjects.length > 4 && (
         <div className="text-center mt-6">

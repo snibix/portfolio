@@ -6,20 +6,20 @@ export default function Training() {
   const isInView = useInView(ref, { once: true });
 
   const SlideUp = {
-    initial: { opacity: 0, y: -100 },
-    animate: isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: -100 },
+    initial: { opacity: 0, y: -60 },
+    animate: isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: -60 },
     transition: { duration: 0.8 },
   };
 
   const SlideRight = {
-    initial: { opacity: 0, x: 100 },
-    animate: isInView ? { opacity: 1, x: 0 } : { opacity: 0, x: 100 },
+    initial: { opacity: 0, x: 60 },
+    animate: isInView ? { opacity: 1, x: 0 } : { opacity: 0, x: 60 },
     transition: { duration: 0.8 },
   };
 
   const SlideLeft = {
-    initial: { opacity: 0, x: -100 },
-    animate: isInView ? { opacity: 1, x: 0 } : { opacity: 0, x: -100 },
+    initial: { opacity: 0, x: -60 },
+    animate: isInView ? { opacity: 1, x: 0 } : { opacity: 0, x: -60 },
     transition: { duration: 0.8 },
   };
   return (

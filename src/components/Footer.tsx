@@ -9,8 +9,8 @@ export default function Footer() {
       <motion.div
         className="max-w-6xl mx-auto px-4"
         ref={ref}
-        initial={{ opacity: 0, x: 100 }}
-        animate={isInView ? { opacity: 1, x: 0 } : { opacity: 0, x: 100 }}
+        initial={{ opacity: 0, y: 30 }}
+        animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 30 }}
         transition={{
           opacity: { duration: 1 },
         }}

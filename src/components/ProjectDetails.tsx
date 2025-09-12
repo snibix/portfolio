@@ -7,6 +7,7 @@ import { Link, useParams } from "react-router-dom";
 import projects from "../data/projetsData.json";
 import Carousel from "./Carousel";
 
+type Variants = {};
 // Version responsive des icônes selon la taille d'écran
 const responsiveTechIcons: {
   [key: string]: (size: number) => React.JSX.Element;
@@ -21,12 +22,12 @@ const responsiveTechIcons: {
   konvajs: (size) => <SiKonva size={size} />,
 };
 
-type Variants = {};
 const ProjectDetail = () => {
   const { id } = useParams<{ readonly id: string }>();
   const project = projects.find((p) => p.id === Number(id));
 
   if (!project) return <p className="text-center mt-10">Projet non trouvé</p>;
+
   const refTitle = useRef(null);
   const refTech = useRef(null);
   const refDesc = useRef(null);
@@ -46,29 +47,41 @@ const ProjectDetail = () => {
   const isInViewResult = useInView(refResult, { once: true });
   const isInViewBtn = useInView(refBtn, { once: true });
 
+  // Nouvelles variantes pour l'animation décalée des icônes
   const containerVariants = {
-    hidden: {},
+    hidden: { opacity: 0 },
     visible: {
+      opacity: 1,
       transition: {
-        staggerChildren: 0.4,
+        staggerChildren: 0.2,
+        delayChildren: 0.3,
       },
     },
   };
 
   const iconVariants: Variants = {
-    hidden: { opacity: 0, y: -20 },
+    hidden: {
+      opacity: 0,
+      y: 30,
+      scale: 0.7,
+      rotate: -15,
+    },
     visible: {
       opacity: 1,
       y: 0,
+      scale: 1,
+      rotate: 0,
       transition: {
-        type: "tween",
-        ease: "easeOut",
-        duration: 1,
+        type: "spring",
+        stiffness: 120,
+        damping: 12,
+        duration: 0.8,
       },
     },
   };
+
   return (
-    <div className="container mx-auto px-4 py-10">
+    <div className="container mx-auto px-4 py-10 overflow-hidden">
       {/* Header avec bouton retour */}
       <Link
         to="/#project"
@@ -107,7 +120,7 @@ const ProjectDetail = () => {
         </div>
       </div>
 
-      {/* Technologies utilisées - Version responsive */}
+      {/* Technologies utilisées - AVEC ANIMATION DÉCALÉE */}
       <motion.div
         className="mb-6 sm:mb-8 md:mb-10"
         ref={refTech}
@@ -119,19 +132,36 @@ const ProjectDetail = () => {
           Technologies utilisées
         </h2>
         <div className="bg-white p-3 sm:p-4 md:p-6 lg:p-8 rounded-lg shadow-lg">
-          {/* Grid responsive pour les icônes */}
+          {/* Grid responsive pour les icônes AVEC ANIMATION DÉCALÉE */}
           <motion.div
             className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 xl:flex xl:justify-center gap-3 sm:gap-4 md:gap-6 lg:gap-8 xl:gap-10"
             variants={containerVariants}
             initial="hidden"
-            ref={refTech}
             animate={isInViewTech ? "visible" : "hidden"}
           >
-            {project.technologies.map((tech: string) => (
+            {project.technologies.map((tech: string, index: number) => (
               <motion.div
                 key={tech}
                 variants={iconVariants}
                 className="flex justify-center items-center p-2 sm:p-3 md:p-4"
+                whileHover={{
+                  y: -10,
+                  scale: 1.15,
+                  rotate: [0, -5, 5, 0],
+                  transition: {
+                    type: "spring",
+                    stiffness: 300,
+                    damping: 15,
+                    rotate: {
+                      duration: 0.4,
+                      ease: "easeInOut",
+                    },
+                  },
+                }}
+                whileTap={{
+                  scale: 0.9,
+                  transition: { duration: 0.1 },
+                }}
               >
                 {/* Icônes responsives */}
                 <div className="block sm:hidden">
@@ -159,7 +189,7 @@ const ProjectDetail = () => {
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-8">
         <motion.div
           ref={refDesc}
-          initial={{ opacity: 0, x: -100 }}
+          initial={{ opacity: 0, x: -60 }}
           animate={
             isInViewDesc ? { opacity: 1, x: 0 } : { opacity: 0, x: -100 }
           }
@@ -295,8 +325,8 @@ const ProjectDetail = () => {
       <motion.div
         className="w-full text-center"
         ref={refBtn}
-        initial={{ opacity: 0, y: 100 }}
-        animate={isInViewBtn ? { opacity: 1, y: 0 } : { opacity: 0, y: 100 }}
+        initial={{ opacity: 0, y: 60 }}
+        animate={isInViewBtn ? { opacity: 1, y: 0 } : { opacity: 0, y: 60 }}
         transition={{ duration: 0.8 }}
       >
         <motion.a

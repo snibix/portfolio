@@ -12,7 +12,7 @@ const Contact: React.FC = () => {
   };
   return (
     <motion.div
-      className="py-20 px-4 max-w-3xl mx-auto"
+      className="py-20 px-4 max-w-3xl mx-auto overflow-x-hidden"
       id="contact"
       ref={ref}
       {...SlideDown}
