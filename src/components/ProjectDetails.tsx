@@ -83,36 +83,43 @@ const ProjectDetail = () => {
   return (
     <div className="container mx-auto px-4 py-10 overflow-hidden">
       {/* Header avec bouton retour */}
-      <Link
-        to="/#project"
-        className="text-blue-500 hover:underline mb-4 inline-block text-xl"
-      >
-        <motion.div
-          ref={refArrow}
+      <div className="flex sm:items-center gap-4 sm:gap-6 md:gap-8 lg:gap-12 w-[85%] sm:w-120 md:w-[65%] justify-between">
+        <Link
+          to="/#project"
+          className="text-blue-500 hover:underline inline-block text-xl self-start sm:self-center"
+        >
+          <motion.div
+            ref={refArrow}
+            initial={{ opacity: 0, y: -100 }}
+            animate={
+              isInViewTitle ? { opacity: 1, y: 0 } : { opacity: 0, y: -100 }
+            }
+            whileHover={{ y: -5 }}
+            transition={{
+              opacity: { duration: 0.8 },
+            }}
+          >
+            <HiArrowLeft
+              aria-hidden="true"
+              size={30}
+              className="text-gray-900"
+            />
+          </motion.div>
+        </Link>
+
+        {/* Titre principal */}
+        <motion.h1
+          className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-semibold text-center sm:text-left text-gray-900"
+          ref={refTitle}
           initial={{ opacity: 0, y: -100 }}
           animate={
             isInViewTitle ? { opacity: 1, y: 0 } : { opacity: 0, y: -100 }
           }
-          whileHover={{ y: -5 }}
-          transition={{
-            opacity: { duration: 0.8 },
-          }}
+          transition={{ duration: 0.8 }}
         >
-          <HiArrowLeft aria-hidden="true" size={30} className="text-gray-900" />
-        </motion.div>
-      </Link>
-
-      {/* Titre principal */}
-      <motion.h1
-        className="text-3xl sm:text-3xl md:text-4xl lg:text-5xl font-semibold mb-6 text-center text-gray-900"
-        ref={refTitle}
-        initial={{ opacity: 0, y: -100 }}
-        animate={isInViewTitle ? { opacity: 1, y: 0 } : { opacity: 0, y: -100 }}
-        transition={{ duration: 0.8 }}
-      >
-        {project.title}
-      </motion.h1>
-
+          {project.title}
+        </motion.h1>
+      </div>
       {/* Carousel d'images - Version responsive */}
       <div className="mb-6 sm:mb-8 md:mb-10 lg:mb-12">
         <div className="w-full max-w-sm sm:max-w-md md:max-w-2xl lg:max-w-4xl xl:max-w-6xl mx-auto">
