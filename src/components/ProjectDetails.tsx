@@ -24,9 +24,6 @@ const responsiveTechIcons: {
 
 const ProjectDetail = () => {
   const { id } = useParams<{ readonly id: string }>();
-  const project = projects.find((p) => p.id === Number(id));
-
-  if (!project) return <p className="text-center mt-10">Projet non trouvé</p>;
 
   const refTitle = useRef(null);
   const refTech = useRef(null);
@@ -36,9 +33,7 @@ const ProjectDetail = () => {
   const refDef = useRef(null);
   const refResult = useRef(null);
   const refBtn = useRef(null);
-  const refArrow = useRef(null);
 
-  const isInViewTitle = useInView(refTitle, { once: true });
   const isInViewTech = useInView(refTech, { once: true });
   const isInViewDesc = useInView(refDesc, { once: true });
   const isInViewObj = useInView(refObj, { once: true });
@@ -46,6 +41,10 @@ const ProjectDetail = () => {
   const isInViewDef = useInView(refDef, { once: true });
   const isInViewResult = useInView(refResult, { once: true });
   const isInViewBtn = useInView(refBtn, { once: true });
+
+  const project = projects.find((p) => p.id === Number(id));
+
+  if (!project) return <p className="text-center mt-10">Projet non trouvé</p>;
 
   // Nouvelles variantes pour l'animation décalée des icônes
   const containerVariants = {
