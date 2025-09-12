@@ -117,7 +117,7 @@ export default function Skills() {
           initial="hidden"
           animate={isInView ? "visible" : "hidden"}
         >
-          {icons.map((icon, index) => (
+          {icons.map((icon) => (
             <motion.img
               key={icon.title}
               src={icon.src}

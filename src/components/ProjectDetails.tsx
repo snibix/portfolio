@@ -139,7 +139,7 @@ const ProjectDetail = () => {
             initial="hidden"
             animate={isInViewTech ? "visible" : "hidden"}
           >
-            {project.technologies.map((tech: string, index: number) => (
+            {project.technologies.map((tech: string) => (
               <motion.div
                 key={tech}
                 variants={iconVariants}
